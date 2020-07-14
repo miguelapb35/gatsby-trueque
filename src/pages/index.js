@@ -1,5 +1,18 @@
-import React from "react"
+import React from 'react';
+import { Link } from 'gatsby'
+import Layout from '../components/layout'
 
-export default function Home() {
-  return <div>Hello world!</div>
+const IndexPage = () => {
+  return (
+    <Layout>
+      <div>Hallo we are</div>
+      <h2>Trueque</h2>
+      <p>
+        We are a great App
+        <Link to='/contact'>Contact me.</Link>
+      </p>
+    </Layout>
+  );
 }
+
+export default IndexPage
